@@ -73,9 +73,103 @@ def print_hi(name):
 
     plt.show()
 
+def secondworkload():
+    # Use a breakpoint in the code line below to debug your script.
+    time = []
+
+    m = 15
+
+
+    p0=[]
+    p1=[]
+    p2=[]
+    p3=[]
+    p4=[]
+
+    for t in range(1,120):
+        time.append(t)
+        p0.append(15)
+        p1.append(15)
+        p2.append(15)
+        p3.append(15)
+        p4.append(15)
+
+
+
+    for t in range(121, 121+45):
+        time.append(t)
+        p0.append(m)
+        p1.append(m)
+        p2.append(15)
+        p3.append(15)
+        p4.append(15)
+        m= m+1
+
+    for t in range(121+45, 121+45+75):
+        time.append(t)
+        p0.append(m)
+        p1.append(m)
+        p2.append(15)
+        p3.append(15)
+        p4.append(15)
+    m=15
+    for t in range( 121+45+75, 121+45+75 + 45):
+        time.append(t)
+        p0.append(60)
+        p1.append(60)
+        p2.append(m)
+        p3.append(15)
+        p4.append(15)
+        m=m+1
+    for t in range(121 + 45 + 75 + 45, 121 + 45 + 75 + 45 + 75):
+        time.append(t)
+        p0.append(60)
+        p1.append(60)
+        p2.append(m)
+        p3.append(15)
+        p4.append(15)
+    m=15
+    for t in range(121 + 45 + 75 + 45+75, 121 + 45 + 75 + 45 + 75 + 45):
+        time.append(t)
+        p0.append(60)
+        p1.append(60)
+        p2.append(60)
+        p3.append(m)
+        p4.append(15)
+        m=m+1
+    for t in range(121 + 45 + 75 + 45 + 75+45, 121 + 45 + 75 + 45 + 75 + 45+75):
+        time.append(t)
+        p0.append(60)
+        p1.append(60)
+        p2.append(60)
+        p3.append(m)
+        p4.append(15)
+    for t in range(121 + 45 + 75 + 45 + 75+45 + 75, 121 + 45 + 75 + 45 + 75 + 45+75 + 120):
+        time.append(t)
+        p0.append(15)
+        p1.append(15)
+        p2.append(15)
+        p3.append(15)
+        p4.append(15)
+
+
+
+
+    fig, ax1 = plt.subplots()
+
+    ax1.plot(time, p0, color='blue', label='P0')
+    ax1.plot(time, p1, color='red', label='P1')
+    ax1.plot(time, p2, color='green', label='P2')
+    ax1.plot(time, p3, color='yellow', label='p3')
+    ax1.plot(time, p4, color='brown', label='p4')
+    plt.legend()
+
+    plt.show()
+
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    secondworkload()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
